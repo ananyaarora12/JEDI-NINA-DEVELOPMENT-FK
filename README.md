@@ -1,20 +1,10 @@
  # FlipFit - Setup Guide
- 
- ## Requirements (Another Laptop)
- - macOS/Linux/Windows
- - Java JDK 17+ (or JDK 11+)
- - MySQL Server 8.x (running)
- - MySQL client CLI (`mysql`)
- - MySQL Connector/J jar (JDBC driver)
- - Git
- 
- ## Steps to Run (Another Laptop)
+
  1) Clone the repo
  ```bash
  git clone <YOUR_REPO_URL>
  cd JEDI-FLIPFIT-DEVELOPMENT-PROJECT
  ```
- 
  2) Configure database credentials
  - Edit `JEDI-GROUP-E-FLIPFIT-POS/src/config.properties` and set:
  ```
@@ -46,11 +36,5 @@
  ```bash
  java -cp "out:lib/mysql-connector-j-*.jar" com.flipkart.client.FlipFitApplication
  ```
-
-
-curl -s -X POST "http://localhost:8080/admin/login" -H "Content-Type: application/json" --data-raw "{\"email\":\"admin@flipfit.com\",\"password\":\"admin123\"}"
-  minSize: 1
-  maxSize: 5
-
 
 
