@@ -125,4 +125,13 @@
 </project>
 
 
+database:
+  driverClass: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/flipfit1?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+  user: root
+  password: root
+  minSize: 1
+  maxSize: 5
+
+
 
